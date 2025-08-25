@@ -15,7 +15,13 @@ function Home() {
 	// 	.catch((error) => {
 	// 		console.log(error);
 	// 	});
-	return <div></div>;
+	return (
+	<div>
+		<div>
+			<h3>홈</h3>
+		</div>
+	</div>
+	);
 }
 
 export default Home;

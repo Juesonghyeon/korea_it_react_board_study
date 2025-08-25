@@ -1,5 +1,24 @@
-import { data } from "react-router-dom";
+
 import { instance } from "../utils/instance";
+
+export const getPrincipalRequest = async () => {
+	instance.interceptors.request.use((config) => {
+		const accessToken = localStorage.getItem("accessToken");
+
+		if (accessToken) {
+			config.headers.Authorization = `Bearer ${accessToken}`;
+		}
+
+		return config;
+	});
+
+	try {
+		const response = await instance.get("/auth/principal");
+		return response;
+	} catch (error) {
+		return error.response;
+	}
+};
 
 export const signupRequest = async (data) => {
 	try {
@@ -11,10 +30,10 @@ export const signupRequest = async (data) => {
 };
 
 export const signinRequest = async (data) => {
-  try{
-    const response = await instance.post("/auth/signin", data);
-    return response;
-  } catch (error){
-    return error.response;
-  }
-}
+	try {
+		const response = await instance.post("/auth/signin", data);
+		return response;
+	} catch (error) {
+		return error.response;
+	}
+};
