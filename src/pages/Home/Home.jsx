@@ -1,4 +1,3 @@
-
 /** @jsxImportSource @emotion/react */
 // import * as s from "./styles";
 
@@ -15,13 +14,7 @@ function Home() {
 	// 	.catch((error) => {
 	// 		console.log(error);
 	// 	});
-	return (
-	<div>
-		<div>
-			<h3>홈</h3>
-		</div>
-	</div>
-	);
+	return <div>Home</div>;
 }
 
 export default Home;

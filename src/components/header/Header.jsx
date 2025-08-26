@@ -1,4 +1,3 @@
-
 /** @jsxImportSource @emotion/react */
 import { LuLogIn, LuLogOut, LuUserRoundPlus } from "react-icons/lu";
 import * as s from "./styles";
