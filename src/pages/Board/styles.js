@@ -17,6 +17,7 @@ export const listContainer = css`
   border-top: 2px solid #333;
   border-bottom: 2px solid #333;
   box-sizing: border-box;
+  cursor: pointer;
 
   & > ul > li {
     display: flex;
