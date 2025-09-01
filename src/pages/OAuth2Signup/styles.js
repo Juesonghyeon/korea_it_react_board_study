@@ -20,6 +20,7 @@ export const inputBox = css`
 	flex-direction: column;
 	gap: 12px;
 `;
+
 export const btnBox = css`
 	display: flex;
 	justify-content: center;

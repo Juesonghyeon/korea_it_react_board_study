@@ -1,4 +1,3 @@
-
 import { Route, Routes } from "react-router-dom";
 import Home from "../../pages/Home/Home";
 import Write from "../../pages/Write/Write";
@@ -7,7 +6,7 @@ import AuthRouter from "../AuthRouter/AuthRouter";
 import ProtectedRoute from "../../components/ProtectedRoute/ProtectedRoute";
 import BoardDetail from "../../pages/BoardDetail/BoardDetail";
 import Update from "../../pages/Update/Update";
-import AccoutRouter from "../../pages/AccoutRouter/AccoutRouter";
+import AccountRouter from "../AccountRouter/AccountRouter";
 
 function MainRouter() {
 	return (
@@ -46,11 +45,15 @@ function MainRouter() {
 						</ProtectedRoute>
 					}
 				/>
-        <Route path="/account/*" element={
-          <ProtectedRoute>
-            <AccoutRouter/>
-        </ProtectedRoute>}/>
 				<Route path="/auth/*" element={<AuthRouter />} />
+				<Route
+					path="/account/*"
+					element={
+						<ProtectedRoute>
+							<AccountRouter />
+						</ProtectedRoute>
+					}
+				/>
 			</Routes>
 		</>
 	);

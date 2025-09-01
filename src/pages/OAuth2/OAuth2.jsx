@@ -1,4 +1,3 @@
-
 /** @jsxImportSource @emotion/react */
 import { useNavigate, useSearchParams } from "react-router-dom";
 import * as s from "./styles";

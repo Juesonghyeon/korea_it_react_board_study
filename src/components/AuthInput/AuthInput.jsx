@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import * as s from "./styles";
 
-function AuthInput({ type, placeholder, state, setState, disabied }) {
+function AuthInput({ type, placeholder, state, setState, disabled }) {
 	const onChangeHandler = (e) => {
 		setState(e.target.value);
 	};
@@ -14,7 +14,7 @@ function AuthInput({ type, placeholder, state, setState, disabied }) {
 				value={state}
 				placeholder={placeholder}
 				onChange={onChangeHandler}
-				disabled={disabied}
+				disabled={disabled}
 			/>
 		</>
 	);
