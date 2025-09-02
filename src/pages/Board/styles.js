@@ -27,6 +27,12 @@ export const listContainer = css`
 		padding: 0 20px;
 		box-sizing: border-box;
 		color: #333;
+		cursor: pointer;
+
+		&:hover{
+			opacity: 0.8;
+			background-color: #f2f2f2;
+		}
 
 		& > div {
 			display: flex;
@@ -58,6 +64,8 @@ export const paginateContainer = css`
 
 		& > li:hover {
 			transform: translateY(-2px);
+			opacity: 0.8;
+			background-color: #f2f2f2;
 		}
 	}
 `;

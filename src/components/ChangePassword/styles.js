@@ -1,16 +1,17 @@
 import { css } from "@emotion/react";
 
 export const container = css`
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const inputBox = css`
 	display: flex;
 	flex-direction: column;
+	width: 45%;
 	gap: 12px;
 
 	& > button {
@@ -24,6 +25,17 @@ export const inputBox = css`
 
 		&:hover {
 			opacity: 0.8;
+		}
+	}
+
+	&> ul {
+		width: 100%;
+		padding-left: 20px;
+		box-sizing: border-box;
+		& > li {
+			font-size: 15px;
+			color: #dc3545;
+			list-style: disc;
 		}
 	}
 `;
