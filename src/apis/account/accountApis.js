@@ -1,18 +1,31 @@
-import { instance } from "../utils/instance"
+import { instance } from "../utils/instance";
 
-export const changePasswordRequest = async(data) => {
-  try {
-    const response = await instance.post("/account/change/password", data)
-    return response;
-  } catch (error) {
-    return error.response;
-  }
-}
+export const changePasswordRequest = async (data) => {
+	try {
+		const response = await instance.post("/account/change/password", data);
+		return response;
+	} catch (error) {
+		return error.response;
+	}
+};
+
 export const sendMailRequest = async (data) => {
-  try {
-    const response = await instance.post("/mail/send", data)
-    return response
-  } catch (error) {
-    return error.response;    
-  }
+	try {
+		const response = await instance.post("/mail/send", data);
+		return response;
+	} catch (error) {
+		return error.response;
+	}
+};
+
+export const changeProfileImg = async (data) => {
+	try {
+		const response = await instance.post(
+			"/account/change/profileimg",
+			data
+		);
+		return response;
+	} catch (error) {
+		return error.response;
+	}
 };

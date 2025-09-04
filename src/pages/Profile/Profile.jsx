@@ -1,3 +1,4 @@
+
 /** @jsxImportSource @emotion/react */
 import * as s from "./styles";
 import profileImg from "../../assets/profileImg.jpg";
@@ -102,7 +103,8 @@ function Profile() {
 							<ChangePassword />
 						) : (
 							<ChangeProfileImg
-								oldProfileImg={principal.profileImg}
+								oldProfileImg={principal?.profileImg}
+								userId={principal?.userId}
 							/>
 						)}
 					</div>
